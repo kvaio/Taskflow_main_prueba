@@ -1,0 +1,87 @@
+* ::after::before{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    height: 100vh;
+    background-size: cover ;
+    background-image: linear-gradient(#6e6e6e, #64003e);
+    display: flex;
+    align-items: center;
+}
+
+.sidebar{
+    background-color: white;
+    width: max-content;
+    border-radius: 10px;
+    padding: 2rem 1rem;
+    
+}
+
+.sidebar:hover .sidebar_element{
+    grid-template-columns: 40px 1fr;
+}
+
+.sidebar_list{
+    list-style: none;
+    padding: 0;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+.sidebar_element{
+    padding: .8rem 1.3rem;
+    border-radius: 3px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 40px 0fr;
+    color: rgb(46, 46, 46);
+    transition: grid-template-columns .4s;
+}
+
+.sidebar_element:hover{
+    background-color: #c200a8;
+    color: white;
+    fill: white;
+    cursor: pointer;
+    border-radius: 1rem;
+    transition: .3s;
+}
+
+.sidebar_hide{
+    overflow: hidden;
+}
+
+.sidebar_icon{
+    width: 100%;
+    overflow: hidden;
+    justify-self: center;
+}
+
+h1{
+    color: white;
+    position: absolute;
+    top: 0%;
+    right: 0.5%;
+}
+
+
+  h1:hover{
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+    background-color: #888;
+    transition: .5s;
+    cursor: pointer;
+  }
+  
+  .bienvenida {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* ocupa toda la altura de la pantalla */
+  }
+  
